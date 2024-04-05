@@ -1,0 +1,91 @@
+        /* estilo para el body */
+        .body {
+            background-color: beige;
+        }
+
+        /* Estilo para el contenedor */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .centrar{
+            margin: 0 auto;
+            padding: 0 0.8em;
+        }
+
+        /* Estilo para la tarjeta */
+        .card {
+            margin: 1em;
+            width: 100%;
+            /* Cambiamos esto a 80% para móviles */
+            background-color: lightgray;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Media query para pantallas medianas (tabletas, etc.) */
+        @media (min-width: 768px) {
+            .card {
+                width: 80%;
+                /* La tarjeta ocupará el 50% del ancho de la pantalla en tabletas */
+            }
+        }
+
+        /* Media query para pantallas grandes (ordenadores de escritorio, etc.) */
+        @media (min-width: 1024px) {
+            .card {
+                width: 30%;
+                /* La tarjeta ocupará el 20% del ancho de la pantalla en ordenadores de escritorio */
+            }
+        }
+
+
+        /* Estilo para el encabezado de la tarjeta */
+        .card-header {
+            text-align: center;
+            color: white;
+            background-color: red;
+            padding: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        /* Estilo para el cuerpo de la tarjeta */
+        .card-body {
+            padding: 20px;
+        }
+
+        /* Estilo para el pie de la tarjeta */
+        .card-footer {
+            text-align: center;
+            padding: 10px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        /* Estilo para los botones */
+        .btn {
+            color: white;
+            background-color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .cardTask {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .cardTask:hover {
+            --transform: translate(-0.1%, -0.1%);
+            --animation: translate 2s linear;
+            opacity: 1;
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+        }
